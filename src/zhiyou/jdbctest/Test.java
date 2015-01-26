@@ -12,8 +12,8 @@ import java.sql.SQLException;
 public class Test extends Exception {
     public static void main(String[] args) throws SQLException {
 
-    StudentLonin.lonin();//学生登录并且插入homework表中，
-     //   Teacherlonin.lookup();
+   // StudentLonin.lonin();//学生登录并且插入homework表中，
+        Teacherlonin.lookup();
 
 
     //     Addnum.insert("1", "刘亦菲");

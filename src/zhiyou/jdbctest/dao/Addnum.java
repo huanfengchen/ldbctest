@@ -38,7 +38,7 @@ public  class Addnum {
 
             stmt = conn.createStatement();
 
-            sql = "select name from persons s where  s.numno='" + number + "'";
+            sql = "select name from persons s where  s.numno='" + number + "';";
             rs = stmt.executeQuery(sql);// executeQuery会返回结果的集合，否则返回空值
             while (rs.next()) {
 //                System.out.println(rs);
@@ -65,7 +65,7 @@ public  class Addnum {
 
             stmt = conn.createStatement();
 
-            sql = "select score from homework s where  s.owner='" + number + "'";
+            sql = "select score from homework s where  s.owner='" + number + "';";
             rs = stmt.executeQuery(sql);// executeQuery会返回结果的集合，否则返回空值
             while (rs.next()) {
 //                System.out.println(rs);
@@ -91,7 +91,7 @@ public  class Addnum {
 
             stmt = conn.createStatement();
 
-            sql = "select numno, name from persons";
+            sql = "select numno, name from persons;";
             rs = stmt.executeQuery(sql);// executeQuery会返回结果的集合，否则返回空值
             while (rs.next()) {
 //                System.out.println(rs);
