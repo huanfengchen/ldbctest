@@ -94,7 +94,7 @@ public  class Addnum {
             sql = "select numno, name from persons;";
             rs = stmt.executeQuery(sql);// executeQuery会返回结果的集合，否则返回空值
             while (rs.next()) {
-//                System.out.println(rs);
+               System.out.println("hhhhhh");
                 System.out.println(rs.getString(1) +"\t"+ rs.getString(2) );// 入如果返回的是int类型可以用getInt()
 
             }
